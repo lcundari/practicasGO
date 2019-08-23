@@ -24,8 +24,13 @@ func NewTweet(user, text string) *TextTweet {
 // 	return miTweet.PrintableTweet
 
 // }
+
+//toString
 func (miTweet *TextTweet) String() string {
 	contenido := miTweet.Text
 	return contenido
 
+}
+func (miTweet *TextTweet) GetUser() string {
+	return miTweet.User
 }
